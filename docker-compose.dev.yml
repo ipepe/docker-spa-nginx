@@ -1,0 +1,10 @@
+version: '2'
+services:
+  server:
+    build: .
+    volumes:
+      - './build:/usr/share/nginx/html'
+    ports:
+      - "8080:80"
+
+# docker-compose -f docker-compose.dev.yml up --build
